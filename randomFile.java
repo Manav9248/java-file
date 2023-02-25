@@ -2,13 +2,11 @@ public class randomFile {
     public static void main(String args[]) {
    
        int n = 5;  // 0101(in decimal)
-      int position = 3;
+      int i = 1;
 
-      int bitMask = 1<<position;
+      int bitMask = 1<<i;
+      int newNumber = bitMask | n;
 
-      if((bitMask & n)==0);
-      System.out.println("bitmask is zero ");
-    } else {
-        System.out.println("Bitmask is not zero ");
-    }
+      System.out.println(newNumber);
+}
 }
